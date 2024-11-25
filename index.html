@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zhafran's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    
+
+  </head>
+  <body style="background-color: #fefeff;">
+    <nav id="desktop-nav">
+      <div class="logo">Muhammad Zhafran Bahaman</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience/Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Muhammad Zhafran</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience/Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/zhafran-profile.png" alt="zhafran profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Muhammad Zhafran</h1>
+        <p class="section__text__p2">Senior Data Analyst | Data Visualization Expert | Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/ZhafranCV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mdzhafranbb/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/iamzhaf/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="text-container">
+        <p style="margin-top: 10px;">
+          I am an <b>intrapreneur</b> and a <b>self-starter</b> with a passion for learning, problem-solving and a <b>strong desire to innovate and make a 
+            meaningful impact.</b> I hold a <b>Bachelor's Degree in Economics and Finance</b> from the University of London. 
+            I have <b>6+ years of experience in data analytics</b> 
+            across FinTech, Banking, and Consulting. I bring expertise in <b>Python, Data Processing, 
+              SQL, Tableau, Power BI and Plotly Dash. </b> I've <b>led dashboard development in both Tableau and Microsot PowerBI </b> and designed innovative solutions 
+          solutions like a financial web application to empower individuals with informed financial and budgeting decision.
+        </p>
+      </div>
+      <div class="section__pic-container-aboutme">
+        <p>Zhafran's CV WordCloud</p>
+        <img
+          src="./assets/zhafran_cv_wordcloud.png"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+    <section class="resume-section" id="experience">
+      <p class="section__text__p1">Get to know my</p>
+      <h1 class="title" style="margin-bottom: 5px;">Experience and Education</h1>
+      <br/>
+
+      <h5 class="title", style="margin-bottom:40px; font-size: xx-large;">💼 Experience</h5>
+
+      <div class="timeline-item">
+        <div class="timeline-year">Apr 2024 - Oct 2024</div>
+        <div class="timeline-content">
+          <h3>DBS - Singapore</h3>
+          <p>Data Steward / Data Governance Analyst (Agency Contractor under Adecco)</p>
+          <ul class="achievements-list">
+            <li>
+              <strong>Leverage Python/PySpark to Automate DQ Profiling Checks:</strong>
+              Developed Data Quality (DQ) Profiling Python Program using OOP principles, 
+              and automated its execution using Cloudera Job Pipeline, 
+              eliminating manual processes, resulting a 80% improvement in Turnaround Time, significantly boosting operational efficiency.
+            </li>
+            <li>
+              <strong>Metadata Management in Collibra:</strong>
+              Ensured the accuracy of business metadata in DBS's Data Catalog platform, Collibra, and upheld high standards for data management practices.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-year">Feb 2023 - Dec 2023</div>
+        <div class="timeline-content">
+          <h3>Standard Chartered Bank - Singapore</h3>
+          <p>AVP, Data Analyst (Direct Contractor)</p>
+          <ul class="achievements-list">
+            <li>
+              <strong>Excel and PowerBI LIBOR Transition Dashboard Development:</strong>
+              Developed PowerBI and Excel dashboards for the LIBOR transition program, 
+              providing senior managers with key actionable insights and demonstrated knowledge of financial markets products suchs as Derivatives and Bonds. 
+            </li>
+            <li>
+              <strong>Data Processing and Compliance for Regulatory Reporting:</strong>
+              Used Python for data cleaning and processing, ensuring compliance with IBOR reporting 
+              requirements and building ETL pipelines for dashboards and reports.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-year">Mar 2022 - Feb 2023</div>
+        <div class="timeline-content">
+          <h3>Maybank - Singapore</h3>
+          <p>Junior Data Scientist, Retail Credit Risk Intelligence Team, Maybank's Group Risk (Full-Time)</p>
+          <ul class="achievements-list">
+            <li>
+              <strong>Credit Portfolio Dashboard Development:</strong>
+              Led in developing Maybank's PowerBI Portfolio Risk Dashboard for Risk Managers
+              and Product Heads, delivering crucial credit risk insights, and demonstrated expertise in data modelling
+              , data visualization and knowledge of credit risk management.
+            </li>
+            <li>
+              <strong>ETL Pipelines Development:</strong>
+              Engineerd ETL data pipelines for the Portfolio Risk Dashboard, and crafter data extraction
+              and processing sripts using SAS, SQL and Python. 
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-year">Mar 2020 - Mar 2022</div>
+        <div class="timeline-content">
+          <h3>Validus Capital - Singapore (FinTech)</h3>
+          <p>Data Scientist II (Full-Time)</p>
+          <ul class="achievements-list">
+            <li>
+              <strong>Leveraged Power BI to empower Investor Team with Key Portfolio Metrics:</strong>
+                Devised and led in the development of Power BI reporting dashboard for the Investor Relations Team, resulting in a 75% increase in efficiency
+                for insights generation.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-year">Feb 2019 - Mar 2020</div>
+        <div class="timeline-content">
+          <h3>KPMG - Singapore</h3>
+          <p>Management Consultant/Data Analyst, Data Analytics Team (Full-Time)</p>
+          <ul class="achievements-list">
+            <li>
+              <strong>Leveraged cutting-edge data analytics solutions for effective risk management:</strong>
+              Co-developed in the Tableau dashboard for one of Singapore's largest rail operator. Devised and implemented
+              an interactive network graph in Tableau where nodes represented
+              train station, colour-coded as Red,Green and Yellow to signify risk levels.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h5 class="title", style="margin-bottom:40px; font-size: xx-large; margin-top: 30px;">🏫 Education</h5>
+
+      <div class="timeline-item">
+        <div class="timeline-year">2017</div>
+        <div class="timeline-content">
+          <h3>University of London</h3>
+          <p>BSc. (Honours) In Economics and Finance</p>
+          <ul class="achievements-list">
+            <li>
+              Conducted Python and Machine Learning 101 class for data analytics club members.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+  </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <br/>
+      <canvas id="radarChart" width="50" height="50"></canvas>
+      <!-- <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Analytics and Coding Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>End-to-End Dashboard Development</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PowerBI</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Processing</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ETL and Data Pipelines</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Development (Dashboard) In Dash</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title", style="text-transform: none; font-size: 20px;">Plotly Dash<br>SG Business Landscape Insights Dashoard</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+        
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:muhd.zhafran@gmail.com">muhd.zhafran@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mdzhafranbb/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Muhammad Zhafran. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="script.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
