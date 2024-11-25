@@ -2,12 +2,12 @@
 const ctx = document.getElementById('radarChart').getContext('2d');
 
 const data = {
-  labels: ['Python','JavaScript','SQL/PostgreSQL',
+  labels: ['Python','JavaScript','SQL/PostgreSQL','Git',
     'Power BI (Including DAX)', 'Tableau','Excel','Data Visualization',
     'Machine Learning (Including ML Deployment)','Building ETL Data Pipelines','PySpark (Big Data Processing)','Statistics/Econometrics'],
   datasets: [{
     label: 'My Data Analytics Skills Proficiency',
-    data: [8.5, 1.5, 8.5, 8,
+    data: [8.5, 1.5, 8.5,5, 8,
          7.5,8,9,4.5,7.5,6,7.5],
     backgroundColor: 'rgba(168, 169, 175, 0.3)',
     borderColor: 'rgba(0, 0, 0, 1)', // Colour for the line
